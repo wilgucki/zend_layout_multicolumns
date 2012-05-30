@@ -2,5 +2,5 @@
 .zfproject.xml
 docs
 library/Zend
-data
+docs
 tests
