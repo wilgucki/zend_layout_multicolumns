@@ -1,1 +1,31 @@
-<?php echo $this->layout()->content; ?>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>multicolumn layout</title>
+        <style>
+            .content {
+                float: left;
+                width: 75%;
+            }
+
+            .aside {
+                float: right;
+                width: 25%;
+            }
+
+            .clear {
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <section class="content">
+            <?php echo $this->layout()->content; ?>
+        </section>
+        <aside class="aside">
+            <?php echo $this->layout()->aside; ?>
+        </aside>
+        <div class="clear"></div>
+    </body>
+</html>
